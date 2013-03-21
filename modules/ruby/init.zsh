@@ -41,21 +41,21 @@ fi
 #
 
 # General
-alias rb='ruby'
+# alias rb='ruby'
 
 # Bundler
-if (( $+commands[bundle] )); then
-  alias rbb='bundle'
-  alias rbbe='rbb exec'
-  alias rbbi='rbb install --path vendor/bundle'
-  alias rbbl='rbb list'
-  alias rbbo='rbb open'
-  alias rbbp='rbb package'
-  alias rbbu='rbb update'
-  alias rbbI='rbbi \
-    && rbb package \
-    && print .bundle       >>! .gitignore \
-    && print vendor/bundle >>! .gitignore \
-    && print vendor/cache  >>! .gitignore'
-fi
+# if (( $+commands[bundle] )); then
+#   alias rbb='bundle'
+#   alias rbbe='rbb exec'
+#   alias rbbi='rbb install --path vendor/bundle'
+#   alias rbbl='rbb list'
+#   alias rbbo='rbb open'
+#   alias rbbp='rbb package'
+#   alias rbbu='rbb update'
+#   alias rbbI='rbbi \
+#     && rbb package \
+#     && print .bundle       >>! .gitignore \
+#     && print vendor/bundle >>! .gitignore \
+#     && print vendor/cache  >>! .gitignore'
+# fi
 
