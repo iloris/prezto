@@ -73,3 +73,6 @@ if [[ -d "$TMPDIR" ]]; then
   fi
 fi
 
+if [[ -s "/opt/boxen/env.sh" ]]; then
+  source "/opt/boxen/env.sh"
+fi
