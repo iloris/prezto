@@ -14,3 +14,8 @@ fi
 
 # fix for using a carrot in commands, e.g. "git reset HEAD^^"
 setopt localoptions nonomatch
+
+function auth_me {
+  ssh $1 'mkdir -p ~/.ssh'
+  ssh $1 'cat >>.ssh/authorized_keys' <~/.ssh/id_rsa.pub
+}
