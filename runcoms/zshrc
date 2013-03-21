@@ -12,3 +12,5 @@ fi
 
 # Customize to your needs...
 
+# fix for using a carrot in commands, e.g. "git reset HEAD^^"
+setopt localoptions nonomatch
